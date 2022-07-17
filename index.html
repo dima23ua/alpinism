@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/main.min.css?_v=20220715185020">
+	<link rel="stylesheet" href="css/main.min.css?_v=20220717152111">
 	<title>Промышленный альпинизм - Главная</title>
 </head>
 
@@ -79,7 +79,6 @@
 				<div data-da=".header-navigation,768,last" class="button">
 					<a href="#callback" class="btn main-btn popup-link">Заказать звонок</a>
 				</div>
-
 
 				<!-- menu burger -->
 				<div class="burger">
@@ -160,121 +159,122 @@
 			<div class="main-content__right">
 
 				<!-- cost calculator -->
-				<div class="main-calculation">
-					<div class="main-calculation__body calculation">
-						<h3 class="calculation__title">Калькулятор расчета стоимости</h3>
+				<div class="calc-substrate">
+					<div class="main-calculation">
+						<div class="main-calculation__body">
+							<h3 class="calculation__title">Калькулятор расчета стоимости</h3>
 
-						<!-- Cost calculation dropdown before 1200px -->
-						<div class="cost-calculation">
-							<div class="cost-calculation__text">Рассчитать</div>
-							<div class="cost-calculation__arrow">
-								<svg class="arrow-icon-svg">
-									<use xlink:href="img/sprite.svg#arrow"></use>
-								</svg>
+							<!-- Cost calculation dropdown before 1200px -->
+							<div class="cost-calculation calculation">
+								<div class="cost-calculation__text">Рассчитать</div>
+								<div class="cost-calculation__arrow">
+									<svg class="arrow-icon-svg">
+										<use xlink:href="img/sprite.svg#arrow"></use>
+									</svg>
+								</div>
 							</div>
-						</div>
 
-						<!-- filter calculation -->
-						<div class="calculation-body">
-							<!-- noUiSlider -->
-							<div class="filter">
-								<h4 class="filter__title">Площадь м²</h4>
-								<div class="filter__body">
-									<div class="filter__line" id="filter"></div>
-									<div class="filter__values values-filter">
-										<input id="ui-value" autocomplate="off" type="text" name="filter-input"
-											class="values-filter__input" value="0">
+							<!-- filter calculation -->
+							<div class="calculation-body">
+								<!-- noUiSlider -->
+								<div class="filter">
+									<h4 class="filter__title">Площадь м²</h4>
+									<div class="filter__body">
+										<div class="filter__line" id="filter"></div>
+										<div class="filter__values values-filter">
+											<input id="ui-value" autocomplate="off" type="text" name="filter-input"
+												class="values-filter__input" value="0">
+										</div>
 									</div>
 								</div>
+
+								<!-- select city and activity -->
+								<div class="select-body">
+									<!-- activity select -->
+									<div class="secect-content dropdown">
+										<button class="secect-content__button dropdown__button">Кровельные работы</button>
+										<ul class="secect-content__list dropdown__list">
+											<div class="secect-content__list-content">
+												<li class="secect-content__list-item dropdown__list-item">Фасадные работы</li>
+												<li class="secect-content__list-item dropdown__list-item">Клининговые работы</li>
+												<li class="secect-content__list-item dropdown__list-item">Покраска</li>
+												<li class="secect-content__list-item dropdown__list-item">Арбористика</li>
+											</div>
+										</ul>
+									</div>
+
+									<!-- city select -->
+									<div class="secect-content dropdown">
+										<button class="secect-content__button dropdown__button">Каменец-Подольский</button>
+										<ul class="secect-content__list dropdown__list">
+											<div class="secect-content__list-content">
+												<li class="secect-content__list-item dropdown__list-item">Хмельницкий</li>
+												<li class="secect-content__list-item dropdown__list-item">Шепетовка</li>
+												<li class="secect-content__list-item dropdown__list-item">Староконстантинов</li>
+												<li class="secect-content__list-item dropdown__list-item">Черновцы</li>
+											</div>
+										</ul>
+									</div>
+								</div>
+
+								<!-- full price -->
+								<div class="price">
+									<div class="price__title">Ориентировочная стоимость</div>
+									<div class="price__full-price">
+										<div class="price__label">от</div>
+										<div class="price__summ">10 000 грн</div>
+									</div>
+								</div>
+
+								<!-- form contacts -->
+								<form action="#" method="POST" class="form" id="calc" name="calculation-form">
+									<!-- input contacts -->
+									<div class="calculation-input">
+										<input class="calculation-input__input" type="text" name="name" placeholder="Ваше имя">
+										<input class="calculation-input__input" type="tel" name="phone" placeholder="Телефон">
+									</div>
+
+									<!-- Button-->
+									<div class="calc-button">
+										<a href="" class="btn form-btn popup-link">Оставить заявку</a>
+									</div>
+								</form>
 							</div>
 
-							<!-- select city and activity -->
-							<div class="select-body">
-								<!-- activity select -->
-								<div class="secect-content dropdown">
-									<button class="secect-content__button dropdown__button">Кровельные работы</button>
-									<ul class="secect-content__list dropdown__list">
-										<div class="secect-content__list-content">
-											<li class="secect-content__list-item dropdown__list-item">Фасадные работы</li>
-											<li class="secect-content__list-item dropdown__list-item">Клининговые работы</li>
-											<li class="secect-content__list-item dropdown__list-item">Покраска</li>
-											<li class="secect-content__list-item dropdown__list-item">Арбористика</li>
-										</div>
-									</ul>
-								</div>
-
-								<!-- city select -->
-								<div class="secect-content dropdown">
-									<button class="secect-content__button dropdown__button">Каменец-Подольский</button>
-									<ul class="secect-content__list dropdown__list">
-										<div class="secect-content__list-content">
-											<li class="secect-content__list-item dropdown__list-item">Хмельницкий</li>
-											<li class="secect-content__list-item dropdown__list-item">Шепетовка</li>
-											<li class="secect-content__list-item dropdown__list-item">Староконстантинов</li>
-											<li class="secect-content__list-item dropdown__list-item">Черновцы</li>
-										</div>
-									</ul>
-								</div>
-							</div>
-
-							<!-- full price -->
-							<div class="price">
-								<div class="price__title">Ориентировочная стоимость</div>
-								<div class="price__full-price">
-									<div class="price__label">от</div>
-									<div class="price__summ">10 000 грн</div>
-								</div>
-							</div>
-
-							<!-- form contacts -->
-							<form action="#" method="POST" class="form" id="calc" name="calculation-form">
-								<!-- input contacts -->
-								<div class="calculation-input">
-									<input class="calculation-input__input" type="text" name="name" placeholder="Ваше имя">
-									<input class="calculation-input__input" type="tel" name="phone" placeholder="Телефон">
-								</div>
-
-								<!-- Button-->
-								<div class="button">
-									<a href="" class="btn main-btn popup-link">Оставить заявку</a>
-								</div>
-							</form>
 						</div>
-
 					</div>
 				</div>
 
-			
 
-			<!-- slider-swiper start -->
-			<div class="slider swiper-content">
+				<!-- slider-swiper start -->
+				<div class="slider swiper-content">
 
-				<div class="slider__wrapper swiper-wrapper">
-					<!--slide-1-->
-					<div class="slider__slide swiper-slide">
-						<div class="slider__content">
-							<picture><source srcset="img/main-img.webp" type="image/webp"><img src="img/main-img.jpg" alt="window washing" title="Мойка окон"></picture>
+					<div class="slider__wrapper swiper-wrapper">
+						<!--slide-1-->
+						<div class="slider__slide swiper-slide">
+							<div class="slider__content">
+								<picture><source srcset="img/main-img.webp" type="image/webp"><img src="img/main-img.jpg" alt="window washing" title="Мойка окон"></picture>
+							</div>
+						</div>
+						<!--slide-2-->
+						<div class="slider__slide swiper-slide">
+							<div class="slider__content">
+								<picture><source srcset="img/main-img-2.webp" type="image/webp"><img src="img/main-img-2.jpg" alt="window washing" title="Мойка окон"></picture>
+							</div>
+						</div>
+						<!--slide-3-->
+						<div class="slider__slide swiper-slide">
+							<div class="slider__content">
+								<picture><source srcset="img/main-img-3.webp" type="image/webp"><img src="img/main-img-3.jpg" alt="window washing" title="Мойка окон"></picture>
+							</div>
 						</div>
 					</div>
-					<!--slide-2-->
-					<div class="slider__slide swiper-slide">
-						<div class="slider__content">
-							<picture><source srcset="img/main-img-2.webp" type="image/webp"><img src="img/main-img-2.jpg" alt="window washing" title="Мойка окон"></picture>
-						</div>
-					</div>
-					<!--slide-3-->
-					<div class="slider__slide swiper-slide">
-						<div class="slider__content">
-							<picture><source srcset="img/main-img-3.webp" type="image/webp"><img src="img/main-img-3.jpg" alt="window washing" title="Мойка окон"></picture>
-						</div>
-					</div>
+					<!-- pagination -->
+					<div class="swiper-pagination"></div>
 				</div>
-				<!-- pagination -->
-				<div class="swiper-pagination"></div>
+				<!-- slider-swiper - end -->
 			</div>
-			<!-- slider-swiper - end -->
 		</div>
-	</div>
 </section>
 
 <section class="section">
@@ -338,7 +338,7 @@
 
 </section>
 
-	<script src="js/app.min.js?_v=20220715185020"></script>
+	<script src="js/app.min.js?_v=20220717152111"></script>
 </body>
 
 </html>
