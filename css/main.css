@@ -556,7 +556,7 @@ select {
 .main-title {
   font-style: normal;
   font-weight: 400;
-  font-size: calc(24px + 2.2900763359vw);
+  font-size: calc(32px + 1.679389313vw);
   line-height: 120%;
   text-transform: uppercase;
   color: var(--dark);
@@ -1012,7 +1012,7 @@ select {
 }
 
 .section {
-  padding: 200px 0;
+  padding: 150px 0;
 }
 
 .tabs {
@@ -1027,7 +1027,7 @@ select {
 
 .section-title__title {
   font-style: normal;
-  font-size: 34px;
+  font-size: calc(26px + 0.625vw);
   line-height: 115%;
   text-transform: uppercase;
   max-width: 545px;
@@ -1198,6 +1198,85 @@ select {
   line-height: 125%;
   letter-spacing: 0.02em;
   color: #868686;
+}
+
+.about-content__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-content__text {
+  width: 100%;
+}
+
+.about-content__text-content {
+  width: 100%;
+}
+
+.about-content__text-vertical {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.about-content__paragraphs {
+  position: relative;
+  padding: 0 55px;
+}
+
+.about-content__paragraph {
+  width: 100%;
+  max-width: 415px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.about-content__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.about-content__image {
+  width: 100%;
+  position: relative;
+  width: 100%;
+  max-width: 630px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about-content__img {
+  width: 100%;
+}
+
+.about-content__img img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.about-content__img-small {
+  width: 50%;
+  max-width: 330px;
+  margin-top: -140px;
+  position: relative;
+  z-index: 1;
 }
 
 .popup-wrapper {
@@ -1418,9 +1497,13 @@ select {
   }
 }
 
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1280px) {
   .main-title {
     font-size: 54px;
+  }
+
+  .section-title__title {
+    font-size: 34px;
   }
 }
 
@@ -1473,6 +1556,10 @@ select {
     display: none;
   }
 
+  .main {
+    padding-bottom: 80px;
+  }
+
   .main-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1491,6 +1578,7 @@ select {
   }
 
   .main-content__paragraph {
+    max-width: 100%;
     text-align: center;
     margin: 0 auto 20px;
   }
@@ -1504,9 +1592,10 @@ select {
     margin-bottom: 20px;
   }
 
-  .main-content .btn {
-    width: 100%;
-    text-align: center;
+  .main-content .button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .main-content .button {
@@ -1521,6 +1610,38 @@ select {
 
   .tabs-block {
     width: 33.333%;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+  .section-title__title {
+    padding-top: 60px;
+  }
+
+  .about-content__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .about-content__img img {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .about-content__img-small {
+    margin-right: 25px;
+  }
+
+  .about-content__paragraph {
+    max-width: 100%;
   }
 }
 
@@ -1604,11 +1725,23 @@ select {
   }
 
   .main-title {
-    font-size: calc(24px + 51 * (100vw - 320px) / 1310);
+    font-size: calc(32px + 37.4 * (100vw - 320px) / 1280);
   }
 
   .tabs-block {
     width: 50%;
+  }
+
+  .section-title__title {
+    font-size: calc(26px + 13.6 * (100vw - 320px) / 1280);
+  }
+
+  .about-content__text-vertical {
+    display: none;
+  }
+
+  .about-content__paragraphs {
+    padding: 0;
   }
 }
 
@@ -1674,10 +1807,15 @@ select {
   .tabs-block {
     width: 100%;
   }
+
+  .main-content .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .main-title {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
